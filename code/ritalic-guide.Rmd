@@ -1,5 +1,5 @@
 ---
-title: "ritalic: the official guide"
+title: "ritalic guide"
 output:
   html_document:
     df_print: paged
@@ -35,6 +35,7 @@ structure of the library:
 ![Alt text](images/api.png)
 
 
+<br/><br/>
 
 ## italic_match
 * italic_match is the core function of ritalic:
@@ -54,6 +55,7 @@ now we can store the accepted names into a variable to easily pass them to the n
 accepted_names <- match$accepted_name
 ```
 
+<br/><br/>
 
 ## italic_description
 return the description and the additional notes of a taxon
@@ -64,7 +66,9 @@ descriptions <- ritalic::italic_description(accepted_names)
 descriptions
 ```
 
-### italic_taxon_data
+<br/><br/>
+
+## italic_taxon_data
 returns data related to the taxon:
 <details>
 <summary>Substrata and morpho-functional traits:</summary>
@@ -187,6 +191,8 @@ taxon_data <-  ritalic::italic_taxon_data(accepted_names)
 taxon_data
 ```
 
+<br/><br/>
+
 ## italic_classification
 returns the taxonomical classification of a taxon
 ```{r, results='hide'}
@@ -195,6 +201,8 @@ systematics <- ritalic::italic_classification(accepted_names)
 ```{r}
 systematics
 ```
+
+<br/><br/>
 
 ## italic_rarity
 returns the commonness-rarity for each ecoregion of Italy 
@@ -221,10 +229,14 @@ rarity <- ritalic::italic_rarity(accepted_names)
 rarity
 ```
 
+<br/><br/>
+
 ## italic_distribution
 returns the presence / absence (1 / 0) of a taxon in each of the 20 administrative regions of Italy
-![administrative regions of Italy](./images/regions.png)
-administrative regions of Italy
+<details>
+<summary>Administrative regions:</summary>
+<img src="./images/regions.png" width="500"/>
+</details>
 ```{r, results='hide'}
 distribution <- ritalic::italic_distribution(accepted_names)
 ```
@@ -232,6 +244,7 @@ distribution <- ritalic::italic_distribution(accepted_names)
 distribution
 ```
 
+<br/><br/>
 
 ## italic_occurrences
 returns all the georeferenced occurrences of a taxon
@@ -260,14 +273,16 @@ occurrences %>%
   )
 ```
 
+<br/><br/>
+
 ## italic_checklist
 ```{r}
 checklist <- ritalic::italic_checklist()
-length(checklist)
 head(checklist)
 ```
 
 
+<br/><br/>
 
 ## italic_traits
 !!! function in development
