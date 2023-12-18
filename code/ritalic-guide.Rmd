@@ -5,11 +5,12 @@ output:
     df_print: paged
 ---
 
-# ritalic
+ritalic is a library designed to provide an easy access to the data of [ITALIC](https://italic.units.it) from R."
 
-Data and tools of italic are available through ritalic package
-* The package can be installed from github using the library devtools
-* Soon the library will be avalilable in cran too!
+<ul>
+<li>The package can be installed from github using the library devtools</li>
+<li>Soon the library will be avalilable in cran too!</li>
+</ul>
 ```{r, message=FALSE}
 # install and load devtools
 # install.packages('devtools') # if not already installed
@@ -41,7 +42,7 @@ structure of the library:
 * accepted names can later be passed to the other functions of the package
 
 ```{r, results='hide'}
-match <- ritalic::italic_match(c('Cetraria islandica', 'Lecanora albela','Parmelia caperata (L.) Ach', 'Ramalina americana Hal' ))
+match <- ritalic::italic_match(c('Cetraria islandica L. subsp. islandica', 'Lecanora albela','Parmelia caperata (L.) Ach', 'Ramalina americana Hal' ))
 
 ```
 ```{r}
@@ -222,8 +223,6 @@ rarity
 
 ## italic_distribution
 returns the presence / absence (1 / 0) of a taxon in each of the 20 administrative regions of Italy
-<details>
-<summary>Administrative regions of Italy:</summary>
 ![administrative regions of Italy](./images/regions.png)
 administrative regions of Italy
 ```{r, results='hide'}
