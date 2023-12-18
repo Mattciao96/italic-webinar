@@ -1,0 +1,7 @@
+"0","occurrences <- ritalic::lich_occurrences(accepted_names[2])"
+"0","occurrences <- occurrences %>% "
+"0","  mutate(decimalLatitude = as.numeric(decimalLatitude)) %>% "
+"0","  mutate(decimalLongitude = as.numeric(decimalLongitude)) %>% "
+"0","    mutate(coordinatesUncertaintyInMeters = as.numeric(coordinatesUncertaintyInMeters))"
+"0","  "
+"0","head(occurrences)"
