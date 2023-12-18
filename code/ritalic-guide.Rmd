@@ -31,7 +31,7 @@ library(leaflet)
 # Exploring the library
 
 structure of the library:
-![Alt text](../api.png)
+![Alt text](images/api.png)
 
 
 
@@ -222,6 +222,8 @@ rarity
 
 ## italic_distribution
 returns the presence / absence (1 / 0) of a taxon in each of the 20 administrative regions of Italy
+<details>
+<summary>Administrative regions of Italy:</summary>
 ![administrative regions of Italy](./images/regions.png)
 administrative regions of Italy
 ```{r, results='hide'}
