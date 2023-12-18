@@ -127,7 +127,7 @@ returns data related to the taxon:
 
 
 <details>
-<summary>Ecology indicators, poleotolerance and altitudinal distribution:</summary>
+<summary>Ecological indicators, poleotolerance and altitudinal distribution:</summary>
 <br/>
 <b>ph_of_the_substrata</b>
 <ul>
